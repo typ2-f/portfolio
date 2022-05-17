@@ -1,0 +1,52 @@
+@mixin flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+$thema-purple:purple;
+
+body {
+  background-color: antiquewhite;
+  span,a,p{
+    text-decoration: none;
+    color:$thema-purple;
+  }
+}
+
+.section {
+  width: 100%;
+}
+.card-tel {
+  @include flexbox();
+  flex-direction: column;
+}
+.header {
+  height:80px;
+  width: 100%;
+  @include flexbox();
+  justify-content: space-between;
+  .img-logo {
+    height: 100%;
+    width: auto;
+  }
+  .header-nav {
+    @include flexbox();
+    width: 50%;
+    .header-nav__list {
+      @include flexbox();
+      width: 100%;
+    }
+    .header-nav__item {
+      @include flexbox();
+      width: 25%;
+    }
+  }
+  .card-tel{
+    margin-right:5px;
+  }
+}
+.section-top {
+  .bg-img-top {
+    width: 100%;
+  }
+}
