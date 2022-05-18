@@ -1,14 +1,16 @@
-body {
-  background-color: antiquewhite;
-}
-
 body span, body a, body p {
   text-decoration: none;
-  color: purple;
+  line-height: 1.3em;
+  color: #144e94;
+}
+
+body .bi {
+  color: #144e94;
 }
 
 .section {
   width: 100%;
+  min-height: 500px;
 }
 
 .card-tel {
@@ -25,6 +27,8 @@ body span, body a, body p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 5px;
+  border: 2px solid #144e94;
 }
 
 .header {
@@ -45,7 +49,7 @@ body span, body a, body p {
 }
 
 .header .img-logo {
-  height: 100%;
+  height: 80px;
   width: auto;
 }
 
@@ -92,7 +96,27 @@ body span, body a, body p {
   margin-right: 5px;
 }
 
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.section .bg-img {
+  position: absolute;
+}
+
+.section .content {
+  position: absolute;
+  width: 100%;
+}
+
 .section-top .bg-img-top {
   width: 100%;
+}
+
+.section-about .content {
+  background-color: #cccccc;
 }
 /*# sourceMappingURL=style.css.map */

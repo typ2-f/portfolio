@@ -11,7 +11,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="../img/favicon.svg" type="image/svg+xml" />
-    <title>Document</title>
+    <title>Okafolio</title>
   </head>
   <body>
     <header class="header">
@@ -22,10 +22,15 @@
       </div>
       <nav class="header-nav">
         <ul class="header-nav__list">
-          <li class="header-nav__item"><a href="index.html">HOME</a></li>
-          <li class="header-nav__item"><a href="">COMPANY</a></li>
-          <li class="header-nav__item"><a href="">SERVICE</a></li>
-          <li class="header-nav__item"><a href="">CONTACT</a></li>
+          <li class="header-nav__item">
+            <a href="index.html"
+              >HOME
+              <p>ホーム</p>
+            </a>
+          </li>
+          <li class="header-nav__item"><a href="">COMPANY<p>会社概要</p></a></li>
+          <li class="header-nav__item"><a href="">SERVICE<p>サービス</p></a></li>
+          <li class="header-nav__item"><a href="">CONTACT<p>お問い合わせ</p></a></li>
         </ul>
       </nav>
       <div class="card-tel">
@@ -33,14 +38,43 @@
           <i class="bi bi-telephone"></i>
           <span class="card-tel__number">0123-456-789</span>
         </div>
-        <span class="card-tel__worktime">9:00～17:00</span>
+        <span class="card-tel__worktime">平日 9:00～17:00</span>
       </div>
     </header>
     <section class="section section-top">
-      <img src="../img/top-bg.jpg" alt="背景画像" class="bg-img-top" />
+      <img src="../img/top-bg.svg" alt="背景画像" class="bg-img bg-img-top" />
+      <div class="content">
+        <h1>
+          暮らしをゆたかに
+        </h1>
+      </div>
     </section>
-    <section></section>
-    <section></section>
-    <footer></footer>
+    <section class="section section-about">
+      <div class="content">
+        <h2>わたしたちはこんな会社です</h2>
+        <p>こういったことをテーマにこんなことをしています</p>
+      </div>
+    </section>
+    <section class="section section-service">
+      <div class="content">
+        <h2>事業内容</h2>
+        <p>こんなことをやってます！</p>
+      </div>
+    </section>
+    <section class="section section-contact">
+      <h2>まずはご相談から！</h2>
+      <div class="card-tel">
+        <div class="card-tel__telephone">
+          <i class="bi bi-telephone"></i>
+          <span class="card-tel__number">0123-456-789</span>
+        </div>
+        <span class="card-tel__worktime">平日 9:00～17:00</span>
+      </div>      
+    </section>
+    <footer>
+      <p>会社の名前</p>
+      <p>会社の場所</p>
+      <p>コピーライト</p>
+    </footer>
   </body>
 </html>

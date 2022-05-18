@@ -1,32 +1,48 @@
+//----変数とmixin----
+$black:rgb(8,47,80);
+$darkblue:rgb(20,78,148);
+$blue:rgb(41,153,196);
+$lightblue:rgb(165,197,214);
+$brown:rgb(102,102,102);
+$gray:rgb(204,204,204);
+
 @mixin flexbox {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-$thema-purple:purple;
 
+//----全体設定----
 body {
-  background-color: antiquewhite;
   span,a,p{
     text-decoration: none;
-    color:$thema-purple;
+    line-height: 1.3em;
+    color:$darkblue;
+  }
+  .bi{
+    color:$darkblue;
   }
 }
-
+//----コンポーネント----
 .section {
   width: 100%;
+  min-height: 500px;
 }
 .card-tel {
   @include flexbox();
   flex-direction: column;
+  padding:5px;
+  border: 2px solid $darkblue;
 }
+//----個別設定----
+//----header----
 .header {
   height:80px;
   width: 100%;
   @include flexbox();
   justify-content: space-between;
   .img-logo {
-    height: 100%;
+    height: 80px;
     width: auto;
   }
   .header-nav {
@@ -45,8 +61,26 @@ body {
     margin-right:5px;
   }
 }
+.section{
+  display: flex;
+  position: relative;
+  .bg-img{
+    position: absolute;
+  }
+  .content{
+    position: absolute;
+    width:100%;
+  }
+}
+//----top----
 .section-top {
   .bg-img-top {
     width: 100%;
+  }
+}
+//----会社概要----
+.section-about{
+  .content{
+    background-color: $gray;
   }
 }
